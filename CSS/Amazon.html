@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+        }
+        header{
+            width: 100%;
+            background: fixed;
+               background-color: black;height: 60px;
+               height: 60px;
+               color: white;
+               position: fixed;
+
+        }
+        .Conatiner{
+            width: 99%;
+          
+            height: 100%;
+            margin: auto;
+        }
+        .container-hearder{
+                 display: flex;
+                 align-items: center;
+        }
+        .logo-con{
+             height: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            
+        }
+        .logo{
+            width: 120px;
+            height: 50px;
+            background-image: url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB541718031_.png");
+            background-repeat: no-repeat;
+            background-position-y: -39px;
+            overflow: hidden;
+        }
+        .in{
+            position: relative;top: -1px;
+              left: -12px;
+              font-size: 15px;
+              color: rgb(254, 252, 252);
+
+        }
+        .border-white{
+            padding: 5px;
+            border: 1.5 solid transparent;
+        }
+        .border-white:hover{
+            border: 1.5px solid white;
+        }
+        .address
+        {
+           margin-left:15px ;
+        }
+        .address p{
+            margin: 0;
+            position: relative;
+            top: 90px;
+            right: 5px;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+        }
+        .ben{
+            font-size: 0.8rem;
+            position: relative;
+            top: 60px;
+            left: 10px;
+        }
+        .icon-location{
+            position: relative;
+            top: 90px;
+            margin-right: 7px;
+        }
+        .serach-container{
+            background-color: red;
+            position: relative;
+            left: 120px;
+            top: 55px;
+            width: 640px;
+            display: flex;
+            height: 40px;
+            justify-content: space-between;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .serach-container:hover{
+            outline: 3px solid orange;
+        }
+        .search-select{
+            width: 60px;
+            border: none;
+            background-color: #ccc;
+        }
+        .search-input{
+            width: 100%;
+            height: 100%;
+            border: none;outline: none;padding: 3px;
+            font-size: 1.1rem;
+        }
+        .search-icon{
+            width: 50px;
+            background-color: rgb(253, 172, 101);
+            display:flex;
+            align-items: center;
+            font-size: 1.2rem;
+            columns: black;
+
+        }
+        .lang-con{
+                 position: relative;
+                 left: 820px;
+                 bottom: 60px;
+        }
+        .lang-con p{
+            font-size: 0.8rem;
+            color: white;
+        }
+        .lang-img{
+                  width: 20px;
+                  position: relative;
+                  bottom: 40px;
+        }
+        .lang-img img{
+            width: 100%;
+        }
+        .Hello{
+                color: white;
+                font-size: small;
+                position: relative;
+                left: 900px;
+                bottom: 120px;
+        }
+        .account{
+            font-weight: 900px;
+            font-size: 1.1rem;
+        }
+        .return{
+             margin: 0%;
+             color: white;
+             position: relative;
+             left: 1050px;
+             bottom: 160px;
+        }
+        .order{
+            font-size: 1rem;
+            font-weight: 900;
+            display: flex;
+            width: 70px;
+            position: relative;
+            left: 5px;
+        }
+        .cart{
+              font-size: larger;
+              color: white;
+              position: relative;
+              left: 1170px;
+              bottom: 100px;
+
+        }
+        nav{
+             height: 40px;
+             width: 100%;
+             background-color: rgb(31, 29, 29);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+              color : white;
+              font-size: large;
+              position: fixed;
+              top: 50px;
+        }
+        a{
+            text-decoration: none;
+            color : white;
+        }
+        img{
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="Conatiner container-hearder">
+           <div class="logo-con border-white">
+             <div class="logo"></div>
+               <span class="in">.in</span> 
+            </div>
+            <div class="address border white">
+                <p class="ben">Bengaluru</p>
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot icon-location" style="color: #ece6e6;"></i>
+                    <p>Update Address</p>
+                </div>
+                <div class="serach-container">
+                    <select class="search-select">
+                        <option value="">All</option>
+                    </select>
+                    <input type="text" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #eff1f5;"></i>
+                    </div>
+                </div>
+                <div class="lang-con border-white">
+                    <p>English</p>
+                    <div class="lang-img">
+                           <img src="https://media.istockphoto.com/id/512185437/photo/indias-flag-close-up.jpg?s=612x612&w=0&k=20&c=ndMmdJY9qsL4f_dJBSDbPjD213GD5s_YcZAJK8z2uTQ=" alt="">
+                    </div>
+                </div>
+                <div class="Hello border-white">
+                    <p>Hello  <span>Sing up</span></p>
+                    <p class="account">Account & lists</p>
+                </div>
+                <div class="return">
+                    <p>Return  <span class="order">
+                        & Order
+                    </span></p>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping-fast" style="color: #e3e5e8;"></i>Cart
+                </div>
+              </div>
+        </div>
+    </header>
+    <nav>
+        <a href="">All</a>
+        <a href="">MX Player</a>
+        <a href="">sell</a>
+        <a href="">Amazon pay</a>
+        <a href="">Home & Kitchen</a>
+        <a href="">Compture</a>
+        <a href="">Books</a>
+        <a href="">Car & motorbike</a>
+
+
+    </nav>
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Media/BAU/PC_Hero_2x-toys_1._CB582765723_.jpg" alt="" width="100%">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem ducimus accusamus ab architecto nostrum, blanditiis dolorum recusandae reiciendis non ratione nisi explicabo adipisci omnis delectus et, corporis aspernatur sunt asperiores facilis. Minima doloribus harum reiciendis eos voluptate, repudiandae eveniet necessitatibus. Alias vel tempore, modi quo ullam distinctio ipsa quidem. Nihil fuga alias at, quas error amet provident! Corporis similique adipisci sit ipsam est placeat nostrum unde quidem magnam numquam facere reiciendis dolorem soluta nesciunt voluptatem distinctio amet porro quasi, debitis accusantium. Nulla repellat voluptatum explicabo, magnam sapiente quos eius repudiandae et aspernatur commodi est voluptates consequatur exercitationem modi asperiores culpa vero, odit fugit laboriosam suscipit ad delectus ratione. Nemo minima repudiandae culpa dolorum veniam distinctio aut quidem quibusdam, ad dignissimos ipsa expedita neque ratione nostrum delectus atque ex praesentium suscipit perspiciatis accusantium reiciendis exercitationem magni! Iusto tenetur sed eum tempore consequatur recusandae molestias molestiae at eaque. Eveniet error modi dicta exercitationem sapiente illo voluptatum ipsum distinctio minima aspernatur vel hic nisi quos repellendus laudantium, eligendi fuga sequi unde sit obcaecati quaerat impedit aut sint. Quod sit laboriosam ipsum placeat sapiente voluptate nihil nulla et. Tempora eligendi tempore quam, ad autem aperiam facilis laborum quo in reprehenderit nesciunt fuga voluptas quia adipisci quasi ullam quis perferendis id molestiae ab! Corrupti ea cupiditate, molestiae doloremque dolores temporibus minus ducimus. Mollitia quos odio quam adipisci exercitationem explicabo dolores molestiae sunt beatae magnam dolor laboriosam nihil porro, magni nesciunt expedita fuga ex sit temporibus delectus, vitae officiis. Reprehenderit necessitatibus facere quo blanditiis accusantium nulla impedit porro atque aliquam error, minus facilis rerum quos minima dolore maxime voluptate, sint placeat accusamus magnam sapiente. Quae repellendus cum maiores porro id voluptatibus voluptate mollitia temporibus tempore vel veritatis, labore eveniet inventore. Ut, illo. Fugit quasi at ut vitae beatae incidunt maiores alias voluptas ipsum, facilis velit unde enim possimus animi veritatis inventore eum deserunt magnam quam veniam. Quasi, blanditiis veniam ab accusamus nam incidunt voluptas consequatur nulla, ducimus rerum, id unde reiciendis molestias? Doloremque esse culpa minima vel explicabo architecto, dolorem quaerat quis ipsum, voluptatibus ex porro quod totam neque recusandae soluta! Assumenda vero reiciendis eligendi, obcaecati fuga, dolor nisi incidunt, quod ducimus autem rem impedit deleniti esse repellendus nostrum ut facere necessitatibus suscipit! Tenetur dignissimos molestiae, itaque sapiente, iure eum cupiditate quisquam repellendus illum excepturi quis laborum aspernatur ab? Impedit ex culpa veniam iure error. Sed nam illo, sint enim omnis beatae neque amet id quaerat facilis tenetur aliquid unde accusantium saepe doloremque voluptatibus quam ab libero tempora alias eaque. Sapiente dolore qui reiciendis fuga magnam eius dolorem nihil ad aliquid inventore aperiam velit, repellendus ea, odio ut, illum minima necessitatibus quia hic et quibusdam. Nulla quia ratione veritatis magnam sequi odio tempora, iusto sed deleniti. Consequatur, quia accusantium. Iste, eius amet deserunt quae officia nostrum, nulla impedit cum vero optio voluptas cupiditate explicabo voluptatum ab ullam quisquam dignissimos soluta quam tempore sapiente ratione beatae eum! Est, cumque quae perferendis consequuntur vitae officia fugit deserunt adipisci libero laboriosam illum numquam alias esse accusamus minima aliquid, impedit nulla debitis ut. Voluptates eveniet veniam quas facere ab earum pariatur deleniti ducimus nam amet enim laborum atque aperiam aut reiciendis asperiores magni ad quod assumenda provident, accusamus officia, sequi qui. Fugit tempore maiores est officiis. Architecto, maxime blanditiis doloribus nostrum aliquam ducimus fugiat dolor repellendus voluptatem numquam, sunt earum ab nisi adipisci iure consequatur voluptate magnam laudantium commodi iusto tempora. Ipsum, deleniti. Obcaecati excepturi quod nam odio perspiciatis quidem praesentium autem, voluptatum reiciendis necessitatibus impedit est non saepe, distinctio repellat eligendi eaque error! Voluptates facere architecto, aliquid dolor eos iusto expedita ipsum voluptas ullam molestiae explicabo, qui asperiores. Explicabo ex totam unde voluptate sed pariatur assumenda nemo odio perspiciatis error nihil dolores sint facilis voluptates animi distinctio, qui impedit aliquid quam ea, a voluptatem tenetur repellendus. Iusto omnis consequuntur maxime doloremque autem atque consectetur, aut reiciendis alias quas. Ex dolorum odit, itaque quas, beatae quo ducimus, sed nisi provident voluptatem dicta eveniet eligendi eaque quae. Ea culpa perferendis tenetur quidem, impedit nisi qui amet id deleniti odit aperiam sed dolores facere pariatur, doloribus magni blanditiis tempore officiis? Qui natus aspernatur minima, possimus temporibus nulla accusantium voluptates laborum amet sequi magni, quae impedit quidem quas aliquam alias? Ducimus quae facilis iste laudantium vel odit accusantium suscipit delectus culpa. Cupiditate laborum nesciunt nulla dicta facilis, illo et sapiente dolores eligendi natus enim expedita consequuntur? Nemo at, hic pariatur vel, vitae exercitationem harum accusamus quibusdam molestiae sunt facere amet blanditiis? Modi iure est, ex enim facilis accusantium minus animi atque eos voluptas pariatur recusandae eligendi maiores id, quis omnis totam alias cum quae earum assumenda distinctio. Illo, fuga atque iste, earum exercitationem rem dolorum culpa quis tenetur, in autem doloremque distinctio quisquam tempora iusto nulla ab voluptate eligendi quidem! Perferendis placeat delectus tempora dolores vel sint nostrum atque voluptatum voluptatem minima iste, hic praesentium veritatis, rerum odio doloribus eos autem modi eum! Provident pariatur ut, alias ipsa quod tempore ipsam. Omnis reiciendis eveniet tempora voluptatum magnam, facilis esse vel accusamus ducimus temporibus provident deleniti unde consequatur ea ab doloribus cum vitae asperiores, nisi aperiam. Iure, minus hic aliquam itaque accusamus nostrum! Aperiam delectus magni ut voluptatem quo? Neque perspiciatis minima voluptatem id officia in velit saepe possimus nisi voluptates. Consequatur inventore iure minus nisi nesciunt possimus sed quas quae quia nemo commodi explicabo accusamus debitis eligendi ipsa ab, blanditiis neque eaque dignissimos dolores minima? Labore nulla praesentium odit cumque voluptate minima accusamus expedita. Corrupti et deleniti mollitia necessitatibus voluptatum fugiat pariatur ea quos enim, vel animi ad inventore maxime id blanditiis quod omnis dicta sapiente cum nemo quisquam. Totam ipsam suscipit quaerat, cumque quis, illum omnis quam quo vitae beatae itaque nostrum saepe necessitatibus magnam? Magnam cumque eligendi delectus sapiente quod ea. Iusto veritatis itaque aperiam ipsum possimus incidunt mollitia dignissimos numquam reprehenderit eius magni delectus voluptates, voluptas aspernatur. Rem optio accusantium nobis culpa, deserunt enim itaque officia vero facilis sapiente fugiat earum unde explicabo minus soluta molestiae mollitia aperiam asperiores quaerat consequuntur animi. Est, dolorem voluptatum distinctio iusto debitis itaque!</h1>
+</body>
+</html>

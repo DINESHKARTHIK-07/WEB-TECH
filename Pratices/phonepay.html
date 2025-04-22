@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles for the Header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a1b9a; /* PhonePe's main purple color */
+    padding: 10px 40px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo img {
+    width: 120px; /* Adjust based on actual logo size */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #fdd835; /* Yellow color for hover effect */
+  }
+  
+  .cta-btn {
+    background-color: #ff7043; /* CTA Button Color */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff5722; /* CTA Button hover effect */
+  }
+  
+  /* Media Query for Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    .cta-btn {
+      margin-top: 20px;
+    }
+  }
+  /* Hero Section Styles */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a1b9a; /* PhonePe's main purple color */
+    color: white;
+    padding: 100px 40px;
+    position: relative;
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #ff7043; /* CTA Button Color */
+    color: white;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff5722; /* CTA Button hover effect */
+  }
+  
+  .hero-image img {
+    max-width: 500px; /* Adjust size to fit */
+    width: 100%;
+    height: auto;
+  }
+  
+  .key-features {
+    background-color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .key-features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .features-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+  
+  .feature-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    #hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 20px;
+    }
+  
+    .hero-image {
+      margin-top: 20px;
+    }
+  
+    .key-features {
+      padding: 40px 20px;
+    }
+  
+    .features-icons {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  /* Features Section Styles */
+#features {
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .features-heading h2 {
+    font-size: 2.5rem;
+    color: #6a1b9a; /* PhonePe purple color */
+    margin-bottom: 20px;
+  }
+  
+  .features-heading p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .feature-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5rem;
+    color: #6a1b9a; /* Purple for feature title */
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .features-image img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .features-list {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .features-image {
+      margin-top: 20px;
+    }
+  }
+  /* Benefits Section Styles */
+#benefits {
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .benefits-heading h2 {
+    font-size: 2.5rem;
+    color: #6a1b9a; /* PhonePe purple color */
+    margin-bottom: 20px;
+  }
+  
+  .benefits-heading p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .benefits-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .benefit-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .benefit-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1.5rem;
+    color: #6a1b9a; /* Purple for feature title */
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .benefits-image img {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .benefits-list {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .benefits-image {
+      margin-top: 20px;
+    }
+  }
+  /* How It Works Section Styles */
+#how-it-works {
+    background-color: #ffffff; /* White background for clarity */
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .how-it-works-heading h2 {
+    font-size: 2.5rem;
+    color: #6a1b9a; /* PhonePe purple */
+    margin-bottom: 20px;
+  }
+  
+  .how-it-works-heading p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .step {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff7043; /* Bright color for step number */
+    margin-bottom: 20px;
+  }
+  
+  .step img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .step h3 {
+    font-size: 1.5rem;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .how-it-works-visual img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .steps {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .how-it-works-visual {
+      margin-top: 20px;
+    }
+  }
+  /* Testimonials Section Styles */
+#testimonials {
+    background-color: #f5f5f5; /* Light background to contrast with the reviews */
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .testimonials-heading h2 {
+    font-size: 2.5rem;
+    color: #6a1b9a; /* PhonePe purple */
+    margin-bottom: 20px;
+  }
+  
+  .testimonials-heading p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .testimonials-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+  }
+  
+  .testimonial-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-quote {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-rating {
+    font-size: 1.5rem;
+    color: #ffb400; /* Gold color for stars */
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-name {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .testimonials-list {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .testimonial-item {
+      width: 100%;
+    }
+  }
+  /* Call to Action Section Styles */
+#cta {
+    background-color: #6a1b9a; /* PhonePe purple background */
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  #cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #cta p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ff7043; /* Vibrant orange button color */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff5722; /* Darker orange for hover effect */
+    transform: scale(1.05);
+  }
+  
+  .cta-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta-form h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .cta-form p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .cta-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .cta-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a1b9a;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-form button:hover {
+    background-color: #4a148c; /* Darker purple for button hover */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cta-buttons {
+      flex-direction: column;
+    }
+  
+    .cta-form {
+      width: 90%;
+    }
+  }
+  /* Footer Section Styles */
+#footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links,
+  .footer-social {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ff7043;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #fff;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #aaa;
+    font-size: 0.85rem;
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="phonepe-logo.png" alt="PhonePe Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </nav>
+        <button class="cta-btn">Download App</button>
+      </header>
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Welcome to the New PhonePe</h1>
+          <p>The easiest and fastest way to make digital payments</p>
+          <button class="cta-btn">Download Now</button>
+        </div>
+      
+        <div class="hero-image">
+          <img src="https://static.vecteezy.com/system/resources/previews/003/062/647/non_2x/chinese-yuan-payment-fast-money-transfer-icon-vector.jpg" alt="PhonePe App Screenshot">
+        </div>
+      
+        <div class="key-features">
+          <h2>Key Features</h2>
+          <div class="features-icons">
+            <div class="feature-item">
+              <img src="https://static.vecteezy.com/system/resources/previews/003/062/647/non_2x/chinese-yuan-payment-fast-money-transfer-icon-vector.jpg" alt="Fast Payments">
+              <p>Fast Payments</p>
+            </div>
+            <div class="feature-item">
+              <img src="https://static.vecteezy.com/system/resources/previews/003/062/647/non_2x/chinese-yuan-payment-fast-money-transfer-icon-vector.jpg" alt="Secure Payments">
+              <p>Secure Payments</p>
+            </div>
+            <div class="feature-item">
+              <img src="https://static.vecteezy.com/system/resources/previews/003/062/647/non_2x/chinese-yuan-payment-fast-money-transfer-icon-vector.jpg" alt="Easy UI">
+              <p>Easy Interface</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="features-heading">
+          <h2>What's New in PhonePe?</h2>
+          <p>Explore the new and enhanced features in the latest version of the app.</p>
+        </div>
+      
+        <div class="features-list">
+          <div class="feature-item">
+            <img src="fast-payments-icon.png" alt="Faster Payments">
+            <h3>Faster Payments</h3>
+            <p>Experience quicker and smoother transactions with enhanced speed.</p>
+          </div>
+          <div class="feature-item">
+            <img src="security-icon.png" alt="Enhanced Security">
+            <h3>Enhanced Security</h3>
+            <p>Advanced encryption and protection to ensure your transactions are safe.</p>
+          </div>
+          <div class="feature-item">
+            <img src="new-ui-icon.png" alt="New UI">
+            <h3>New User Interface</h3>
+            <p>A more intuitive and user-friendly design to make navigation easier.</p>
+          </div>
+        </div>
+      
+        <div class="features-image">
+          <img src="app-interface-graphic.png" alt="PhonePe App Interface">
+        </div>
+      </section>
+      <section id="benefits">
+        <div class="benefits-heading">
+          <h2>Why Choose PhonePe?</h2>
+          <p>Discover the top reasons why millions of users trust PhonePe for their digital payments.</p>
+        </div>
+      
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <img src="secure-payments-icon.png" alt="Secure Payments">
+            <h3>Secure Payments</h3>
+            <p>Your financial data is safe with advanced security features.</p>
+          </div>
+          <div class="benefit-item">
+            <img src="cashback-icon.png" alt="Cashback Offers">
+            <h3>Cashback Offers</h3>
+            <p>Enjoy exclusive cashback offers on transactions.</p>
+          </div>
+          <div class="benefit-item">
+            <img src="ease-of-use-icon.png" alt="Ease of Use">
+            <h3>Ease of Use</h3>
+            <p>An intuitive interface that makes payments simple and fast.</p>
+          </div>
+        </div>
+      
+        <div class="benefits-image">
+          <img src="users-using-phonepe.png" alt="Users Using PhonePe">
+        </div>
+      </section>
+      <section id="how-it-works">
+        <div class="how-it-works-heading">
+          <h2>How It Works</h2>
+          <p>Follow these simple steps to get started with PhonePe and make secure digital payments.</p>
+        </div>
+      
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <img src="install-icon.png" alt="Install App">
+            <h3>Install the App</h3>
+            <p>Download and install the PhonePe app from Google Play or the App Store.</p>
+          </div>
+      
+          <div class="step">
+            <div class="step-number">2</div>
+            <img src="link-bank-icon.png" alt="Link Bank">
+            <h3>Link Your Bank</h3>
+            <p>Connect your bank account securely to start making payments.</p>
+          </div>
+      
+          <div class="step">
+            <div class="step-number">3</div>
+            <img src="make-payment-icon.png" alt="Make Payment">
+            <h3>Make a Payment</h3>
+            <p>Choose your recipient and payment method to send money easily.</p>
+          </div>
+      
+          <div class="step">
+            <div class="step-number">4</div>
+            <img src="get-reward-icon.png" alt="Get Reward">
+            <h3>Get Rewards</h3>
+            <p>Earn cashback, offers, and rewards for using PhonePe.</p>
+          </div>
+        </div>
+      
+        <div class="how-it-works-visual">
+          <img src="how-it-works-animation.gif" alt="How PhonePe Works Animation">
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="testimonials-heading">
+          <h2>What Our Users Say</h2>
+          <p>Discover why millions of users trust PhonePe for their digital transactions.</p>
+        </div>
+      
+        <div class="testimonials-list">
+          <div class="testimonial-item">
+            <div class="testimonial-avatar">
+              <img src="user1-avatar.jpg" alt="User 1">
+            </div>
+            <p class="testimonial-quote">"PhonePe has made my life so much easier! Fast payments and awesome rewards. Love it!"</p>
+            <div class="testimonial-rating">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="testimonial-name">John Doe</p>
+          </div>
+      
+          <div class="testimonial-item">
+            <div class="testimonial-avatar">
+              <img src="user2-avatar.jpg" alt="User 2">
+            </div>
+            <p class="testimonial-quote">"I use PhonePe for everything. The app is so simple and secure. Highly recommended!"</p>
+            <div class="testimonial-rating">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="testimonial-name">Jane Smith</p>
+          </div>
+      
+          <div class="testimonial-item">
+            <div class="testimonial-avatar">
+              <img src="user3-avatar.jpg" alt="User 3">
+            </div>
+            <p class="testimonial-quote">"Easy to use, fast transactions, and great customer support. I'm a loyal user!"</p>
+            <div class="testimonial-rating">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="testimonial-name">Mike Johnson</p>
+          </div>
+        </div>
+      </section>
+      <section id="cta">
+        <div class="cta-content">
+          <h2>Get Started with PhonePe</h2>
+          <p>Download the app today and experience seamless payments. Stay updated with the latest features and offers.</p>
+      
+          <div class="cta-buttons">
+            <a href="#download" class="cta-button cta-download">Download the App</a>
+            <a href="#subscribe" class="cta-button cta-subscribe">Subscribe for Updates</a>
+          </div>
+        </div>
+      
+        <div class="cta-form" id="subscribe">
+          <h3>Stay Updated</h3>
+          <p>Get the latest news, updates, and exclusive offers directly to your inbox.</p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer-container">
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+              <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+              <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+              <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 PhonePe. All Rights Reserved. | Designed by PhonePe Team</p>
+        </div>
+      </footer>
+      
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: brown;
+
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+main{
+    height: 500px;
+    width:100% ;
+    background-color: aqua;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavbTKNAOM6hNpIlUSFX39SgtTFNpegKAbwQ&s"),url("https://c4.wallpaperflare.com/wallpaper/666/441/256/pubg-pubh-playerunknown-s-battlegrounds-wallpaper-preview.jpg"),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKBcU7cwZg5Dkw-YH4JQD1-0osU3D1-m90w&s"),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAw64esVqvU_IO5gAzuBH6tX4Mkq_6kx0sv4M2P4kRF91Ay_qwEbAUrxcOeB3-xbn-9f4&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 350px 400px;
+    background-position: 10px 50px,370px 50px,730px,1090px 50px;
+    ;
+}

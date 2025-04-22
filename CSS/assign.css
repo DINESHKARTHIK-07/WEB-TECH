@@ -1,0 +1,42 @@
+nav#nature{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 100%;
+    background-color:black;
+    color:red;
+    align-items: center;
+ }
+ nav{
+    display: flex;
+    justify-content: space-around;
+     height: 80px;
+     width: 100%;
+     background-color: rgb(48, 61, 162);
+     color: rgb(39, 212, 231);
+     align-items: center;
+ }
+ div{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(235, 7, 231);
+    color: rgb(52, 243, 4);
+    align-items: center;
+ }
+ div#home{
+   display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(73, 245, 16);
+    color: rgb(243, 4, 4);
+    align-items: center;
+ }
+ body{
+    background-image:url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/PlayerUnknowns-Battlegrounds-Mirado-vehicle-screenshot.jpg") ;
+    background-attachment: fixed;
+    background-size: 100% 950px;
+    background-repeat: no-repeat;
+ }

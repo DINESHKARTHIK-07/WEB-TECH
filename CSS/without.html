@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            background-color: aqua;
+        }
+        nav button:last-child{
+            background-color: black;
+            color: white;
+            border: none;
+           
+            padding: 8px 50px;
+
+        }
+        nav>div>button:first-child{
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 8px 50px;
+            transition: all 0.2s linear 1s;
+        }
+        nav>div>button:first-child:hover{
+            background-color: white;
+            color: black;
+            padding: 8px 50px;
+            transition: scale(1.1,1.1);
+        }
+        nav input::placeholder{
+            color:black;
+            border: none;
+            position: relative;
+            left: 100px;
+        }
+        nav input{
+            background-color: rgb(209,19,19);
+            height: 25px;
+            width: 550px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <h3>
+                Home
+            </h3>
+        </div>
+        <div>
+            <input type="text" placeholder="Search here.">
+        </div>
+        <div>
+        <button>LOGIN</button>
+        <button>SING UP</button>
+    </div>
+    </nav>
+</body>
+</html>

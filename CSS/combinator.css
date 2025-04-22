@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+    font-size: 40px;
+}
+/* div h1{
+    background-color: brown;
+    color: blue;
+} */
+/* div h2{
+    background-color: blueviolet;
+    color: white;
+} */
+
+
+/* section div{
+    background-color: black;
+    color: red;
+} */
+ /* section>div{
+
+    background-color: red;
+    color: black;
+ } */
+
+ /* section+div{ 
+    color: greenyellow;
+    background-color: red;
+} */
+
+/* section~div{
+    color: green;
+    background-color: yellow; 
+}   */
+
+div+div{
+    background-color: black;
+    color: white;
+}

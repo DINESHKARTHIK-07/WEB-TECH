@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         main{
+            height:500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+         }
+         #img{
+            height: 300px;
+            width: 40%;
+            background-color: black;
+            background-image: url(bike\ photo.jpg);
+             background-repeat: no-repeat;
+             background-size: 100% 300px;
+         }
+         #part{
+            height: 300px;
+            width: 40%;
+            
+            position: relative;
+         }
+         #part>#para1{
+            position: absolute;
+            top: 10px; 
+           
+
+         }
+         #part>#para2{
+            position: absolute;
+            top: 70px;
+            width: 70%;
+         }
+         #part>button{
+            position: absolute;
+            bottom: 70px;
+            left: 10px;
+            padding: 7px 40px;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="img"></div>
+        <div id="part">
+            <p id="para1">
+                   Lorem, ipsum dolor sit amet consectetur earum!
+            </p>
+             <p id="para2">Lorem ipsum d vel ut illo simos voluptate expedita ab repudiandae! Minus alias quia atque, tenetur vitae dolore commodi rerum dignissimos beatae aspernatur.</p>
+             <button>view Details</button>
+        </div>
+    </main>
+</body>
+</html>

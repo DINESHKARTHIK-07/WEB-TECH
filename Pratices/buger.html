@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burger Hut - Hero Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body, html {
+        height: 100%;
+        font-family: 'Rubik', sans-serif;
+        background-color: #121212;
+        color: #f1f1f1;
+      }
+      
+      .hero {
+        height: 100vh;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), 
+        url('https://img.freepik.com/photos-premium/hamburger-laitue-tomate-mayonnaise-dessus_901275-3696.jpg') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+      
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #ffca28;
+        margin-bottom: 20px;
+      }
+      
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin-bottom: 30px;
+        color: #e0e0e0;
+      }
+      
+      .hero .buttons {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      
+      .hero .buttons a {
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 30px;
+        font-weight: bold;
+        color: #fff;
+        background: #e53935;
+        transition: background 0.3s ease;
+      }
+      
+      .hero .buttons a:hover {
+        background: #ff7043;
+      }
+      
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+      
+        .hero p {
+          font-size: 1rem;
+        }
+      
+        .hero .buttons {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+      .signature-burgers {
+        background-color: #1e1e1e;
+        padding: 80px 20px;
+        text-align: center;
+        color: #fff;
+      }
+      
+      .signature-burgers h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #ffca28;
+      }
+      
+      .burger-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .burger-card {
+        background-color: #2a2a2a;
+        border-radius: 16px;
+        overflow: hidden
+      }    
+      .about-us {
+        background-color: #121212;
+        color: #f1f1f1;
+        padding: 80px 20px;
+      }
+      
+      .about-content {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .about-text {
+        flex: 1;
+        min-width: 280px;
+      }
+      
+      .about-text h2 {
+        font-size: 2.5rem;
+        color: #ffca28;
+        margin-bottom: 20px;
+      }
+      
+      .about-text p {
+        font-size: 1.1rem;
+        color: #ccc;
+        margin-bottom: 16px;
+        line-height: 1.6;
+      }
+      
+      .about-image {
+        flex: 1;
+        min-width: 280px;
+      }
+      
+      .about-image img {
+        width: 100%;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      }
+      .testimonials {
+        background-color: #1e1e1e;
+        color: #f1f1f1;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      
+      .testimonials h2 {
+        font-size: 2.5rem;
+        color: #ffca28;
+        margin-bottom: 40px;
+      }
+      
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      .testimonial-card {
+        background-color: #2a2a2a;
+        border-radius: 16px;
+        padding: 30px 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+      }
+      
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .testimonial-card p {
+        font-size: 1.05rem;
+        color: #ccc;
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+      
+      .testimonial-card h4 {
+        color: #ff7043;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .special-offers {
+        background-color: #121212;
+        color: #fff;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      
+      .special-offers h2 {
+        font-size: 2.5rem;
+        color: #ffca28;
+        margin-bottom: 40px;
+      }
+      
+      .offer-card {
+        background-color: #e53935;
+        color: #fff;
+        padding: 40px 30px;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      
+      .offer-card h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .offer-card p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+      
+      .countdown {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #ffeb3b;
+      }
+      
+      .offer-btn {
+        display: inline-block;
+        background-color: #ff7043;
+        color: #fff;
+        padding: 12px 24px;
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+      
+      .offer-btn:hover {
+        background-color: #ff5722;
+      }
+      .contact-info {
+        background-color: #1e1e1e;
+        color: #fff;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      
+      .contact-info h2 {
+        font-size: 2.5rem;
+        color: #ffca28;
+        margin-bottom: 40px;
+      }
+      
+      .contact-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .map-container {
+        flex: 1;
+        min-width: 280px;
+        margin-bottom: 30px;
+      }
+      
+      .contact-details {
+        flex: 1;
+        min-width: 280px;
+      }
+      
+      .contact-details h3 {
+        font-size: 1.8rem;
+        color: #ff7043;
+        margin-bottom: 10px;
+      }
+      
+      .contact-details p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: #ccc;
+      }
+      
+      .contact-link {
+        text-decoration: none;
+        color: #ff7043;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      
+      .contact-link:hover {
+        color: #ffca28;
+      }
+      
+      .social-icons {
+        margin-top: 20px;
+      }
+      
+      .social-icon {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #fff;
+        transition: color 0.3s ease;
+      }
+      
+      .social-icon:hover {
+        color: #ff7043;
+      }
+      
+      /* Add font awesome icons */
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+      .sticky-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #1e1e1e;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+        z-index: 100;
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      
+      .quick-links ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .quick-links ul li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+      
+      .quick-links ul li a {
+        color: #ffca28;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+      }
+      
+      .quick-links ul li a:hover {
+        color: #ff7043;
+      }
+      
+      .social-media a {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 1.5rem;
+        color: #fff;
+        transition: color 0.3s ease;
+      }
+      
+      .social-media a:hover {
+        color: #ff7043;
+      }
+      
+      .newsletter-signup p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      
+      .newsletter-signup form {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .newsletter-signup input {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        outline: none;
+        color: #333;
+      }
+      
+      .newsletter-signup button {
+        padding: 10px 20px;
+        background-color: #ff7043;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .newsletter-signup button:hover {
+        background-color: #ff5722;
+      }
+      
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Welcome to Burger Hut</h1>
+    <p>Deliciously grilled, expertly crafted, and served with a smile — experience the burger revolution.</p>
+    <div class="buttons">
+      <a href="#menu">View Menu</a>
+      <a href="#order">Order Now</a>
+    </div>
+  </section>
+  <section class="signature-burgers">
+    <h2>🍔 Our Signature Burgers</h2>
+    <div class="burger-grid">
+  
+      <div class="burger-card">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/020/290/071/small/fresh-tasty-burger-isolated-on-white-background-photo.jpg" alt="Classic Cheese Burger">
+        <h3>Classic Cheese</h3>
+        <p>Juicy beef patty, cheddar cheese, fresh lettuce, and our house sauce.</p>
+        <a href="#order">Order Now</a>
+      </div>
+  
+      <div class="burger-card">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/020/290/071/small/fresh-tasty-burger-isolated-on-white-background-photo.jpg" alt="Spicy Inferno">
+        <h3>Spicy Inferno</h3>
+        <p>Double patty, jalapeños, hot sauce, pepper jack cheese, and fire.</p>
+        <a href="#order">Order Now</a>
+      </div>
+  
+      <div class="burger-card">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/020/290/071/small/fresh-tasty-burger-isolated-on-white-background-photo.jpg" alt="BBQ Smokehouse">
+        <h3>BBQ Smokehouse</h3>
+        <p>Grilled to perfection with smoky BBQ sauce, bacon, and crispy onions.</p>
+        <a href="#order">Order Now</a>
+      </div>
+  
+    </div>
+  </section>
+  <section class="about-us">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>👨‍🍳 Our Burger Story</h2>
+        <p>
+          At Burger Hut, it all started with a backyard grill, a love for flavor, and a dream to flip burgers that make people smile. 
+          Every bite is made with the freshest ingredients, handcrafted patties, and sauces that dance on your tastebuds. 
+          We’re not just a burger place — we’re a home for burger lovers.
+        </p>
+        <p>
+          Whether you're craving cheesy comfort or spicy adventure, we've got a burger that tells your story.
+          Come hungry. Leave happy. 🍔❤️
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b" alt="Burger Hut Kitchen">
+      </div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h2>💬 Customer Love</h2>
+    <div class="testimonial-grid">
+  
+      <div class="testimonial-card">
+        <p>“These burgers are next-level 🔥! The Classic Cheese is my weekly obsession.”</p>
+        <h4>— Sarah M.</h4>
+      </div>
+  
+      <div class="testimonial-card">
+        <p>“Great vibe, juicy patties, and those buns? Unreal. The BBQ Smokehouse changed my life.”</p>
+        <h4>— Dave R.</h4>
+      </div>
+  
+      <div class="testimonial-card">
+        <p>“Super fast delivery and the Spicy Inferno is actually 🔥. 10/10 would order again!”</p>
+        <h4>— Priya K.</h4>
+      </div>
+  
+      <div class="testimonial-card">
+        <p>“Tried it once, now I bring all my friends. Burger Hut is the GOAT 🐐🍔.”</p>
+        <h4>— Omar T.</h4>
+      </div>
+  
+    </div>
+  </section>
+  <section class="special-offers">
+    <h2>🎉 Special Offers</h2>
+    <div class="offer-card">
+      <h3>🔥 Buy 1 Get 1 Free on All Burgers!</h3>
+      <p>Don’t miss out on this sizzling deal. Grab a friend and dig in!</p>
+      <div class="countdown">
+        <span id="timer"></span>
+      </div>
+      <a href="#order" class="offer-btn">Order Now</a>
+    </div>
+  </section>
+  <section class="contact-info">
+    <h2>📍 Visit Us</h2>
+    <div class="contact-content">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799229783!2d-74.25986631030634!3d40.69767006813113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1b65fc6c01%3A0x6a2702a2e48818ff!2sNew%20York!5e0!3m2!1sen!2sus!4v1620196804102!5m2!1sen!2sus" 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"></iframe>
+      </div>
+  
+      <div class="contact-details">
+        <h3>Opening Hours</h3>
+        <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+        <p>Sat - Sun: 12:00 PM - 11:00 PM</p>
+  
+        <h3>Contact Us</h3>
+        <p>
+          <a href="tel:+1234567890" class="contact-link">📞 +1 (234) 567-890</a>
+        </p>
+        <p>
+          <a href="mailto:contact@burgerhut.com" class="contact-link">📧 contact@burgerhut.com</a>
+        </p>
+  
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="sticky-footer">
+    <div class="footer-content">
+      <div class="quick-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+  
+      <div class="newsletter-signup">
+        <p>Sign up for special offers:</p>
+        <form action="#" method="POST">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  
+  
+</body>
+</html>

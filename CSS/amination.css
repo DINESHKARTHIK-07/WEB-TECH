@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+}
+body{
+    background-color: black;
+}
+div{
+    height:400px ;
+    width:400px ;
+    background-image: url(https://rukminim2.flixcart.com/image/850/1000/kyxb9u80/poster/f/j/o/small-chota-bheem-poster-multicolor-photo-paper-print-12-inch-x-original-imagbfzsgz9g6f3e.jpeg?q=90&crop=false);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    animation-name: abhilsha ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse ;
+    animation-play-state: running;
+}
+@keyframes abhilsha {
+    /* from{
+        background-image: url(https://rukminim2.flixcart.com/image/850/1000/kyxb9u80/poster/f/j/o/small-chota-bheem-poster-multicolor-photo-paper-print-12-inch-x-original-imagbfzsgz9g6f3e.jpeg?q=90&crop=false);
+    }
+    to{
+        background-image: url(https://i.pinimg.com/474x/e7/7c/94/e77c94e9355ad1430cf4387e9ae7b906.jpg);
+    } */
+     0%{
+        background-image: url(https://rukminim2.flixcart.com/image/850/1000/kyxb9u80/poster/f/j/o/small-chota-bheem-poster-multicolor-photo-paper-print-12-inch-x-original-imagbfzsgz9g6f3e.jpeg?q=90&crop=false);
+        /* border-radius: 50%; */
+        position: relative;
+        left: 0;
+        top: 0;
+
+
+     }
+     25%{
+        background-image: url(https://i.pinimg.com/474x/e7/7c/94/e77c94e9355ad1430cf4387e9ae7b906.jpg);
+        border-radius: 50%;
+        position: relative;
+        left: 200px;
+        top: 0px;
+
+     }
+     50%{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOh0Wpf3iAYkERonSmX1uBFoMaddwwYD1V2g&s);
+        border-radius: 50%;
+        left: 200px;
+        top: 300px;
+
+     }
+     75%{
+        background-image: url(https://yt3.googleusercontent.com/bjsr0cPGT-vxIfcVd_jgIVVOPowLZTfGjW9kSMCdawG6dISceuYUyhifzA2iE97qfranu4qyyQ=s900-c-k-c0x00ffffff-no-rj);
+        border-radius: 50%;
+        left: 0;
+        top:300px
+     }
+     100%{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjMzJyoQOMyn9RusrQXEbJig9tZs9RDUUfo35UdxZ9uDQs01Hs5UnDZ0_HnbYzGQAmgo&usqp=CAU);
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+     }
+}
+

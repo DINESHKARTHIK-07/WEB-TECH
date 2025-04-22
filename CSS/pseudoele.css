@@ -1,0 +1,40 @@
+h1{
+    text-align: center ;
+    font-size: 60px;
+}
+body{
+    background-color: rgb(123, 0, 255);
+}
+p{
+    width: 50%;
+    font-size: 30px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bxBjfR_elGO9qiAmoWy1XQDY6HTWlStIzw&s");
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+
+}
+p::first-letter{
+    color:yellow;
+    font-size: 40px ;
+}
+p::first-line{
+    color: red;
+    font-size: 40px;
+}
+p::after{
+content: "Thank you";
+color: pink;
+
+}
+P::selection{
+    background-color: goldenrod;
+    color: blueviolet;
+}
+P::before{
+ content: "Headline";
+ color: blue;
+}          
+li::marker{
+    color: red;
+     font-size: 50px;
+}   

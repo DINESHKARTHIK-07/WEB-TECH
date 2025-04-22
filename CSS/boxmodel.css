@@ -1,0 +1,55 @@
+body{
+    color: brown;
+}
+h1{
+    
+text-align: center;
+}
+div{
+    background-color: black;
+    color: white;
+    width: 80px;
+    /* padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px; */
+     
+     /* padding: 100px;
+     padding: 300px 300px;
+     padding: 100px 500px 100px;
+     padding: 10px 30px 20px 30px; */
+
+
+     padding: 100px;
+
+
+
+     border-width: 50px;
+     border-style: groove;/* solid,dashed,dotted,inset,outset,groove*/
+     border-color: blue;
+       
+     border: 50px dashed blue;
+  
+         
+    /* border-top-width: 10px;
+    border-top-style: dashed;
+    border-top-color: greenyellow; */
+     
+    border-top: 20px dashed rgb(113, 31, 237);
+
+    border-bottom: 20px dashed rgb(168, 47, 255);
+
+
+    border-left: 20px dashed greenyellow;
+
+    border-right: 20px dashed greenyellow;
+
+        border-radius: 100px;
+    }
+button{
+    padding: 10px 90px;
+    border: none;
+    border:2px dotted black;
+    border-radius: 50px;
+
+}

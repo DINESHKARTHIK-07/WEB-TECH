@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: goldenrod;
+        }
+        #container{
+            height: 600px;
+            width: 70vm;
+            background-color: aqua;
+            margin: 50px auto;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-areas: "hdr  hdr hdr  hdr"
+                                  "hdr1 hdr1 hdr1 hdr1"
+                                  "sct sct1  sct2 sct3"
+                                  "art art art asd"
+                                  "ftr ftr ftr ftr";
+        }
+        .items{
+            background-color: black;
+            color: white;
+            border: 1px solid aqua;
+        }
+        #items1{
+            grid-area: hdr;
+        }
+        #items2{
+            grid-area: hdr1;
+        }
+        #items5{
+            grid-area: sct;
+        }
+        #items3{
+            grid-area: sct1;
+        }
+        #items4{
+            grid-area: sct2;
+        }#items6{
+            grid-area: sct3;
+        }
+        #items7{
+            grid-area: art;
+            display: grid;
+            grid-template-areas: "hrd hrd1 hrd1";
+            column-gap: 10px;
+        }
+        #items10{
+            grid-area: hrd;
+            background-color:yellow;
+        }
+        #items11{
+            grid-area: hrd1;
+            background-color: hotpink;
+        }
+        #items8{
+            grid-area: asd;
+        }
+        #items9{
+            grid-area: ftr;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="items1" class="items">boxes</div>
+    <div id="items2" class="items">boxes</div>
+    <div id="items3" class="items">boxes</div>
+    <div id="items4" class="items">boxes</div>
+    <div id="items5" class="items">boxes</div>
+    <div id="items6" class="items">boxes</div>
+    <div id="items7" class="items">
+        <div id="items10" class="items">boxes</div>
+        <div id="items11" class="items">boxes</div>
+        </div>
+    <div id="items8" class="items">boxes</div>
+    <div id="items9" class="items">boxes</div>
+</div>
+</body>
+</html>

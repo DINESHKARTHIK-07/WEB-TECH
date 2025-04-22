@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bata |shoes store and Access</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNsqhdAz52Fw4uZupxH2FaTpv-HojGyCGdTg&s" type="image/x-icon" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+          margin: 0;
+          scroll-behavior: smooth;
+          } 
+        header{
+        position: sticky;
+        top: 0px;
+        }  
+        
+        
+        li{
+            list-style: none;
+        }
+        nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    background-color:white;
+    color:black;
+        }
+        #contents{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    font-size: large;
+    font-weight: 200;
+    position: relative;
+    right: 8%;
+        }
+        #Bata{
+            font-size: 50px;
+            position: relative;
+              left: 60px;
+            font-style: italic;
+            font-weight: 900;
+            font-weight: bolder;
+            color: red;
+        }
+        #img1{
+            height: 700px;
+            width: 100%;
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dwab52ab19/menu/desk_editorials_banner_1A_bata.jpg?sw=1920&q=80");
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            font-weight: 900;
+        }
+        section{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #img2{
+            height: 700px;
+            width: 100%;
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw970c0dd6/menu/banner2_desktop.jpg?sw=1920&q=80");
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            font-weight: 900;
+            
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            margin-top: 350px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white
+            
+        }
+      
+       .search{
+                  padding-top: 4px;
+                  padding-left: 50px;
+                  border-radius: 10px;
+                  border: none;
+                  background-color:rgb(237, 232, 232);
+       }
+       #icons{
+        margin-right: 100px;
+        position: relative;
+        top: -2px;
+        right:190px;
+
+    
+       }
+       #ico{
+             position: absolute;   
+             left: 1250px ;
+             bottom: 10px;
+             font-size: x-large;
+         }
+         #ico1{
+            position: absolute;   
+            left: 1350px;
+            bottom: 10px;
+            font-size: x-large;
+        }
+        #ico2{
+            position: absolute;   
+            left: 1450px;
+            bottom: 10px;
+            font-size: x-large;
+        }
+        #main{
+            height:650px;
+            width:100%;
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dwe15eebfe/test/Hero-Banner-Desktop-Couple-Wedding-Campaign-3840x2160.jpg?sw=2560&q=80");
+            background-size: 100% 650px;
+            
+        }
+        article{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .img1{
+                height: 700px;
+                width: 100%;
+                background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw197bb3ae/menu/desk_editorials_banner_3_bata%20-%20men.jpg?sw=1280&q=80);
+                background-repeat: no-repeat;
+                background-size: 100% 700px;
+
+        }
+        .img2{
+            height: 700px;
+            width: 100%;
+            background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw877355fa/menu/desk_editorials_banner_2_bata%20-%20women.jpg?sw=1280&q=80);
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            
+    }
+    .img3{
+        height: 700px;
+        width: 100%;
+        background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw33473e75/menu/desk_editorials_banner_4_kids_bata-1.jpg?sw=1280&q=80);
+        background-repeat: no-repeat;
+        background-size: 100% 700px;
+        
+}
+aside{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+}
+#mag1{
+    height: 700px;
+    width: 100%;
+    background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw704322a9/menu/NS-2-Editorial-banner-2-columns-Desktop-1920x2276.jpg?sw=1920&q=80);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    
+}
+#mag2{
+    height: 700px;
+    width: 100%;
+    background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dwda6eae8c/utility/1920x2276.jpg?sw=1920&q=80);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    
+}
+h2{
+    font-size: xx-large;
+    margin-left: 50px;
+}
+#hello{
+    display: flex;
+    justify-content: space-around;
+     height: 500px;
+     width: 100%;
+
+
+}
+#pic1{
+    height: 500px;
+    width: 100%;
+    background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw3e103f57/images/tile/8396212_2.jpeg?sw=960);
+    background-repeat: no-repeat;
+    background-size: 99% 500px;
+    font-weight: 600;
+    position: relative;
+   
+    
+}
+#pic2{
+    height: 500px;
+    width: 100%;
+    background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwb6553716/images/tile/8714291_2.jpeg?sw=960);
+    background-repeat: no-repeat;
+    background-size: 99% 500px;
+    font-weight: 600;
+    
+}
+#pic3{
+    height: 500px;
+    width: 100%;
+    background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwa887770d/images/tile/8614067_2.jpeg?sw=960);
+    background-repeat: no-repeat;
+    background-size: 99% 500px;
+    font-weight: 600;
+    
+}
+#pic4{
+    height: 500px;
+    width: 100%;
+    background-image: url(https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw9c0fcdaf/images/tile/8714478_2.jpeg?sw=960);
+    background-repeat: no-repeat;
+    background-size: 99% 500px;
+    font-weight: 600;
+    
+}
+#slipers{
+           margin-top: 20px;
+           margin-left: 20px;
+}
+#MRP{
+    position: relative;
+    top: 350px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+em{
+    line-height: 5px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+P{
+    font-size: small;
+    
+}
+tr{
+    font-size: smaller;
+   
+}
+ol{
+    position: relative;
+    top: 10px;
+    right: 40px;
+}
+#nani{
+    height: 350px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#off1{
+    height: 350px;
+    width: 100%;
+        background-image: url(scr3.png);
+        background-size: 100% 350px;
+}
+#off2{
+    height: 350px;
+    width: 100%; 
+    background-image: url(scr2.png);
+    background-size: 100% 350px;
+}
+#off3{
+    height: 350px;
+    width: 100%; 
+    background-image: url(scr1.png);
+    background-size: 100% 350px;
+}
+#chinni{
+    height: 350px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#off4{
+    height: 350px;
+    width: 100%;
+        background-image: url(Scr4.png);
+        background-size: 100% 350px;
+}
+#off5{
+    height: 350px;
+    width: 100%; 
+    background-image: url(sc4.png);
+    background-size: 100% 350px;
+}
+#off6{
+    height: 350px;
+    width: 100%; 
+    background-image: url(scr6.png);
+    background-size: 100% 350px;
+}
+#raghu{
+    height: 700px;
+    width: 99%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#off7{
+    height: 700px;
+    width: 99%;
+        background-image: url(Screenshot\ 2025-03-20\ 025409.png);
+        background-size: 99% 700px;
+}
+#off8{
+    height: 700px;
+    width: 99%; 
+    background-image: url(Screenshot\ 2025-03-20\ 025428.png);
+    background-size: 99% 700px;
+}
+#off9{
+    height: 700px;
+    width: 99%; 
+    background-image: url(Scr9.png);
+    background-size: 99% 700px;
+}
+#off10{
+    height: 700px;
+    width: 99%; 
+    background-image: url(Screenshot\ 2025-03-20\ 025502.png);
+    background-size: 99% 700px;
+}
+footer{
+    height: 500px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: azure;
+}
+#footer{
+           position: relative;
+           top: 100px;
+           left: 25px;
+          width: 50%;
+         
+          font-weight: 900;
+          
+}
+h3{
+    color: rgba(231, 0, 0, 0.904);
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+pre{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+map{
+    position: relative;
+    top: 50px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: red;
+    color: white;
+    padding: 12px 100px 12px 100px;
+}
+#coonn{
+         position: relative;
+         left: 500px;
+}
+#coonn1{
+    position: relative;
+    left:500px;
+   
+    
+   
+}
+#coonn2{
+    position: relative;
+    left:500px;
+    
+   
+   
+}
+#coonn3{
+    position: relative;
+    left:500px;
+    
+   
+   
+}
+#coonn4{
+    position: relative;
+    left:500px;
+    
+    
+   
+}
+#coonn5{
+    position: relative;
+    left:500px;
+    
+    
+   
+}
+#coonn6{
+    position: relative;
+    left:500px;
+   
+ 
+   
+}
+#heading{
+    text-align: center;
+    position: relative
+    ;
+    top: 150px;
+}
+#ruels{
+         width: 100%;
+         position: relative;
+
+}
+#TEST{
+    font-size: 50PX;
+    color: white;
+    display: flex;
+    justify-content: center;
+position: relative;
+top: 250PX;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="contents">
+
+                <li id="m1">Mens</li>
+                <li id="w2">Womens</li>
+                <li id="k3">Kinds</li>
+            </div>
+            <div id="Bata">
+                <li>Bata</li>
+            </div>
+            <div>
+            <input class="search" type="text" placeholder="Search" ><i class="fa-solid fa-magnifying-glass" id="icons" style="color: #a4a5a8;"></i></div>
+            <div>
+                <i id="ico" class="fa-regular fa-user" style="color: #0659ea;"></i>
+                <i id="ico1" class="fa-regular fa-heart" style="color: #0a53ca;"></i>
+                <i id="ico2"  class="fa-solid fa-cart-shopping" style="color: #2e73ea;"></i>
+                
+            </div>
+        </nav>
+    </header>
+    <div id="main"> 
+       
+</div> 
+    &nbsp;
+    <section>
+         <div id="img1"><a href="https://www.zappos.com/womens-shoes?utm_source=chatgpt.com">WOMENS  </a></div>
+         <div id="img2"><a href="https://www.clarks.com/en-us/womens?utm_source=chatgpt.com">MENS </a></div>
+</section><hr>&nbsp;
+<article>
+    <div class="img1">
+           <li ID="TEST">TIMELESS</li>
+           <li ID="TEST">TERDENS</li>
+           <li ID="TEST">COLLECTIONS</li>
+                <a href="https://www.clarks.com/en-us/womens?utm_source=chatgpt.com">MENS</a>
+            
+    </div>
+    <div class="img2"><a href="https://www.zappos.com/womens-shoes?utm_source=chatgpt.com" >WOMENS  </a></div>
+    <div class="img3"><a href="https://www.zappos.com/womens-shoes?utm_source=chatgpt.com">KIDS  </a></div>
+</article>&nbsp;
+<aside>
+    <div id="mag1"></div>
+    <div id="mag2"></div>
+</aside>&nbsp;
+<h2>
+    Recommended for you
+</h2>&nbsp;
+ <main id="hello">
+             <div id="pic1">
+                    <div id="slipers">New
+                           <div id="MRP">
+                            <em>POWER</em>
+                            <p>Power black textile walking and sports shoes with lace-up closure for men</p>
+                               <tr> MRP ₹ 1,699.00</tr>
+                               <ol> 2 Colors</ol>
+                            </div>
+                    </div>
+             </div> 
+    <div id="pic2">
+        <div id="slipers" >
+               New
+               <div id="MRP">
+                <em> WEINBRENNER</em>
+                <p>Weinbrenner brown casual toe ring slippers for men</p>
+                <tr>MRP ₹ 1,199.00</tr>
+                <ol> 2 Colors</ol>
+                </div>
+        </div>
+    </div>
+    <div id="pic3">
+        <div id="slipers" >
+            New
+            <div id="MRP">
+                 <em>BATA</em>
+                  <p>Bata dark brown casual shoe-style sandals for men</p>
+                  <tr>MRP ₹ 1,499.00</tr>
+                   <ol> 2 Colors</ol>
+             </div>
+        </div>
+    </div>
+    <div id="pic4">
+        <div id="slipers" >
+            New
+            <div id="MRP">
+               <em>BATA</em> 
+               <p>BATA DARK BROWN THONG FOR MEN</p> 
+                <tr>MRP ₹ 999.00</tr>
+        <ol> 2 Colors</ol>
+                </div>
+     </div>
+    </div>
+    
+
+</main>&nbsp;
+<div id="nani">
+    <div id="off1"></div>
+    <div id="off2"></div>
+    <div id="off3"> </div>
+</div>&nbsp;
+<div id="chinni">
+    <div id="off4"></div>
+    <div id="off5"></div>
+    <div id="off6"> </div>
+</div>&nbsp;
+<h2>
+    Discover Our Collection
+</h2>&nbsp;
+<div id="raghu">
+    <div id="off7"></div>
+    <div id="off8"></div>
+    <div id="off9"> </div>
+    <div id="off10"> </div>
+</div>&nbsp;&nbsp;&nbsp;&nbsp;
+<footer>
+<div  id="footer">
+   <h3> Bata club <br>
+will surprise you</h3>
+<pre>Benefits and plenty of surprises are waiting for you!
+Sign up now</pre>
+<map>Discover more</map>
+</div>
+<div id="ruels">
+    <pre id="coonn">SUPPORT                 EXCLUSIVE SERVICE                 COMPANY                           LEGALS </pre>
+ <pre id="coonn1">Contact Us            Check / Return Order                 About Us                           Terms and Conditions</pre>
+<pre id="coonn2">FAQ                      Invite Bata On Wheels                 BATA Worldwide                 Press Release</pre>
+<pre id="coonn3">Connec                 COVID Safety Guidelines              The Bata Company             Privacy Policy</pre>
+<pre id="conn4">                                                                                                                                          Bata Loyalty                                CSR                                   Cookie Policy</pre>
+<pre id="conn5">                                                                                                                                          Bata Franchise                             Awards & Recognition          Whistle Blow Policy</pre>
+</div> 
+<div id="heading">
+       <hr> <h4>© 2025 Bata Brand - Bata India - CIN: L19201WB1931PLC007261</h4><hr>
+</div>
+</footer>
+     
+
+
+ 
+</body>
+</html>

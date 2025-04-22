@@ -1,0 +1,22 @@
+body{
+    background-color: burlywood;
+}
+h1{
+    color: brown;
+}
+h2{
+    color: blue;
+    background-color: bisque;
+}
+p{
+    background-color: rgb(163, 212, 163);
+}
+h3{
+    color: lawngreen;
+}
+h4{
+    color: royalblue;
+}
+ul{
+    color: blueviolet;
+}

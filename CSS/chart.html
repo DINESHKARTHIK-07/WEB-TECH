@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bata Shoes</title>
+  <style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #e60012;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 50px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    background: url('https://via.placeholder.com/1600x700?text=Hero+Image') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn-primary {
+    background-color: #e60012;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero .btn-primary:hover {
+    background-color: #cc000b;
+  }
+  
+  /* Products Section Styling */
+  .products {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .product-card {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    margin: 10px 0;
+  }
+  
+  .product-card a {
+    color: #e60012;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer .social-icons a:hover {
+    text-decoration: underline;
+  }
+  
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="https://via.placeholder.com/150x50?text=Bata+Logo" alt="Bata Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Step into Comfort and Style</h1>
+      <p>Discover the latest collection of shoes designed for comfort and fashion</p>
+      <a href="#" class="btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products">
+    <h2>Our Bestsellers</h2>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x300?text=Men's+Casual+Shoes" alt="Men's Casual Shoes" />
+      <h3>Men's Casual Shoes</h3>
+      <p>Comfortable and stylish for everyday wear.</p>
+      <a href="#">View Product</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x300?text=Women's+Formal+Shoes" alt="Women's Formal Shoes" />
+      <h3>Women's Formal Shoes</h3>
+      <p>Elegance and comfort in one shoe.</p>
+      <a href="#">View Product</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x300?text=Kids'+Sneakers" alt="Kids' Sneakers" />
+      <h3>Kids' Sneakers</h3>
+      <p>Durable and playful for kids on the go.</p>
+      <a href="#">View Product</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Bata. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

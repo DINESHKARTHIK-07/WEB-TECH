@@ -1,0 +1,27 @@
+body{
+    background-color: hotpink;
+}
+h1{
+    color: white;
+    font-size: 50px;
+}
+div{
+    color: orangered;
+    background-color: black;
+    font-size: 40px;
+}
+#demo{
+    background-color: rgb(181, 12, 94);
+    color: rgb(115, 226, 11);
+}
+.test{
+    background-color: darkred;
+    color: rgb(12, 11, 11);
+}
+nav{
+    background-color: black;
+    color: white;
+}
+header,p{
+    font-size: 100px;
+}

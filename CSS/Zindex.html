@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nani{
+            position:absolute;
+            top: 100px;
+            left: 600px;
+            height: 400px;
+            width: 400px;
+            z-index:2 ;
+        }
+        #nan{
+            position:absolute;
+            top: 100px;
+            left: 600px;
+            height: 400px;
+            width: 400px;
+            z-index: 3;
+            filter: blur(100px);
+            filter: brightness(100%);
+            filter: contrast(30%);
+            filter: drop-shadow(15px 15px 15px black);
+            filter: grayscale(40%);
+            filter: hue-rotate(550deg);
+            filter: invert(100%);
+            filter: opacity(1.0);
+            filter: saturate(400%);
+            filter: sepia(100%);
+        }
+    </style>
+</head>
+<body>
+      <img id="nani" src="red photo.jpg" alt="">
+      <img id="nan" src="blue photo.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    background-color: khaki;
+    p{
+        color:black;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}
+/*small mobile devices*/
+@media screen and (min-width:320px) and (max-width:480px){
+    body{
+        background-color: brown;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}
+/*large  mobile devices*/
+@media screen and (min-width:481px) and (max-width:600px){
+    body{
+        background-color:hotpink;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}
+/*small tablets devices*/
+@media screen and (min-width:601px) and (max-width:768px){
+    body{
+        background-color:black;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        line-height: 20px;
+        font-size: 20px;
+        width: 60%;
+        position: relative;
+        left: 50px;
+    }
+}
+/*large tablets devices*/
+@media screen and (min-width:769px) and (max-width:1024px){
+    body{
+        background-color:blue;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}
+/*large tablets devices*/
+@media screen and (min-width:1025px) and (max-width:1280px){
+    body{
+        background-color: yellow;
+    }
+    p{
+        color: black;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}
+/*large tablets devices*/
+@media screen and (min-width:1280px) and (max-width:1440px){
+    body{
+        background-color: red;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}
+/*large  devices*/
+@media screen and (min-width:1441px) {
+    body{
+        background-color: green;
+    }
+    p{
+        color: white;
+        text-align: justify;
+        line-height: 30px;
+        font-size: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}

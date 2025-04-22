@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+    #container{
+           height: 1200px;
+           width: 90%;
+           background-color: darkolivegreen;
+           display: grid;
+           grid-template-columns: 25% 25% 25% 25%;
+           grid-template-rows: 200px 200px 200px 200px;
+           gap: 10px 20px;
+    }
+    .items{
+        background-color: rgb(255, 255, 7);
+        border: 1px solid black;
+
+    }
+    #grid-items1{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #grid-items2{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #grid-items3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: grid;
+        grid-template-columns: 100% 100% ;
+        grid-template-rows: 100px 100px;
+        gap: 10px 20px;
+    }
+    #grid-items4{
+        
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: grid;
+        grid-template-columns: 25% 20% 20% 20%;
+        grid-template-rows: 50px 50px 50px 50px;
+        gap: 10px 20px;
+    }
+    .items0{
+        background-color: rgb(255, 7, 23);
+        border: 1px solid black;
+
+    }
+    #grid-items5{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #grid-items6{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33% ;
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px 20px;
+    }
+    #grid-items7{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #grid-items10{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    #grid-items8{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #grid-items9{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+   #grid-items01{
+    grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+   }
+   #grid-items02{
+    grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+   }
+   #grid-items03{
+    grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+   }
+   #grid-items04{
+    grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+   }
+   .items00{
+    background-color: rgb(9, 240, 117);
+    border: 1px solid black;
+   }
+   .items000{
+    background-color: rgb(67, 88, 206);
+    border: 1px solid black;
+   }
+   #grid-items001{
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+   }
+   #grid-items002{
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+   }
+   
+</style>
+<body>
+    <h1 style="color: rgb(205, 50, 50);" text-align="center" >TASK TWO IN GRID</h1>
+    <div id="container">
+    <div id="grid-items1" class="items">grid-boxes1</div>
+    <div id="grid-items2" class="items">grid-boxes2</div>
+    <div id="grid-items3" class="items">
+        <div id="grid-items001" class="items00">grid-boxes01</div>
+        <div id="grid-items002" class="items00">grid-boxes02</div>
+    </div>
+    <div id="grid-items4" class="items">
+        <div id="grid-items01" class="items0">grid-boxes01</div>
+        <div id="grid-items02" class="items0">grid-boxes02</div>
+        <div id="grid-items03" class="items0">grid-boxes03</div>
+        <div id="grid-items04" class="items0">grid-boxes04</div>
+    </div>
+    <div id="grid-items5" class="items">grid-boxes5</div>
+    <div id="grid-items6" class="items">
+        <div id="grid-items0001" class="items000">grid-boxes02</div>
+        <div id="grid-items0002" class="items000">grid-boxes03</div>
+        <div id="grid-items0003" class="items000">grid-boxes04</div>
+    </div>
+    <div id="grid-items7" class="items">grid-boxes7</div>
+    <div id="grid-items8" class="items">grid-boxes8</div>
+    <div id="grid-items9" class="items">grid-boxes9</div>
+    <div id="grid-items10" class="items">grid-boxes10</div>
+</div>
+</body>
+</html>

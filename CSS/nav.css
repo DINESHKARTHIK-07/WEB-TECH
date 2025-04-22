@@ -1,0 +1,37 @@
+/* nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+} */
+ nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 100%;
+    background-color:blue;
+    color:rgb(198, 246, 205);
+    align-items: center;
+ }
+ a{
+    color: red;
+    text-decoration: none;
+ }
+ #contents{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+ }
+ nav h6{
+color: red;
+ }
+ nav>#icons>h6{
+color: yellow;
+ }
+ #contents+#icons{
+color: rgb(245, 251, 251);
+ }

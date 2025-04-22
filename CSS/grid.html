@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #grid-container{
+        height: 900px;
+        width: 80%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 200px 200px 200px 200px;
+        gap: 10px 20px;
+    }
+    body{
+        background-color: #ffff14;
+    }
+    h1{
+        text-align: center;
+
+    }
+   /* #parent{
+        height: 600px;
+        width: 100%;
+
+    }*/
+    .items{
+        background-color: rgb(255, 255, 7);
+        border: 1px solid black;
+
+    }
+    #grid-items1{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #grid-items6{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-image: url(https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=);
+        background-repeat: no-repeat;
+        background-size: 400px 500px;
+
+    }
+    #grid-items3{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    #grid-items4{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+</style>
+<body>
+    <h1>
+        Grid in css
+    </h1>
+    <div id="parent">
+        <div id="grid-container">
+            <div id="grid-items1" class="items">grig-boxes1</div>
+            <!-- <div id="grid-items2" class="items">grig-boxes2</div> -->
+            <div id="grid-items3" class="items">grig-boxes3</div>
+            <div id="grid-items4" class="items">grig-boxes4</div>
+            <!-- <div id="grid-items5" class="items">grig-boxes5</div> -->
+            <div id="grid-items6" class="items">grig-boxes6</div>
+            <!-- <div id="grid-items7" class="items">grig-boxes7</div>
+            <div id="grid-items8" class="items">grig-boxes8</div> -->
+        </div>
+    </div>
+</body>
+</html>

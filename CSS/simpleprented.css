@@ -1,0 +1,19 @@
+body{
+    background-color: goldenrod;
+}
+*{
+    font-size: 150px;
+    background-color: aqua;
+}
+#boy{
+    background-color: red;
+}
+.girl{
+    background-color: blue;
+}
+div{
+    background-color: green;
+}
+div{
+    background-color: hotpink;
+}

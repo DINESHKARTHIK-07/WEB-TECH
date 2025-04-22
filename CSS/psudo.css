@@ -1,0 +1,51 @@
+body{
+    /* background-image: conic-gradient( yellow 27%,red 78% ); */
+    background-color: goldenrod;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+a{
+    position:absolute;
+    top: 200px;
+    left: 650px;
+    font-size: 50px;
+}
+a:link{
+    color: red;
+    background-color:black;
+}
+a:visited{
+    color: blueviolet;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: palevioletred;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    background-image: url(mali.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 350px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+#box:hover{
+    background-color: wheat;
+    border: 5px solid black;
+    background-image: url(red\ photo.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 350px;
+}
